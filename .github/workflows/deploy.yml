@@ -1,0 +1,11 @@
+name: deploy
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 5
+    steps:
+      - run: echo ok
